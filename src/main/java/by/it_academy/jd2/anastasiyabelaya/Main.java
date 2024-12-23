@@ -13,11 +13,10 @@ public class Main {
         System.out.println(cities);
         cities.set(2, "Prague");
         cities.set(1,"Goa");
-
         String cityWithMaxLength=Util.findCityWithMyLength(cities);
         System.out.println(cityWithMaxLength);
-
         String cityWithMinLength=Util.findCityWithMinLength(cities);
         System.out.println(cityWithMinLength);
+        System.out.println(Util.findCityByFirstLetter(cities,'0'));
     }
 }
