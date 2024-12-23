@@ -12,8 +12,12 @@ public class Main {
         cities.add("Gomel");
         System.out.println(cities);
         cities.set(2, "Prague");
+        cities.set(1,"Goa");
 
         String cityWithMaxLength=Util.findCityWithMyLength(cities);
         System.out.println(cityWithMaxLength);
+
+        String cityWithMinLength=Util.findCityWithMinLength(cities);
+        System.out.println(cityWithMinLength);
     }
 }
