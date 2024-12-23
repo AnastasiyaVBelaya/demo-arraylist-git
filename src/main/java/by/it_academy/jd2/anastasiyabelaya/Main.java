@@ -1,4 +1,4 @@
-package by.it_academy.jd2;
+package by.it_academy.jd2.anastasiyabelaya;
 
 import java.util.ArrayList;
 
@@ -12,14 +12,8 @@ public class Main {
         cities.add("Gomel");
         System.out.println(cities);
         cities.set(2, "Prague");
-        int maxLength = cities.get(0).length();
-        String cityMaxLength = cities.get(0);
-        for (String city : cities) {
-            if (city.length() > maxLength) {
-                cityMaxLength = city;
-                maxLength=city.length();
-            }
-        }
-        System.out.println(cityMaxLength);
+
+        String cityWithMaxLength=Util.findCityWithMyLength(cities);
+        System.out.println(cityWithMaxLength);
     }
 }
